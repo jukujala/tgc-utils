@@ -13,7 +13,7 @@ pip install git+https://github.com/jukujala/tgc-utils
 
 # How: upload cards to a deck in TGC
 
-## Step 1: convert image files at path
+## Step 1: convert image files
 
 Ensure that each card image is of correct size and has a black margin to print well.
 Note: the code supports currently only the
