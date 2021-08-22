@@ -5,9 +5,12 @@ import json
 import logging
 import os
 import requests  # Found at python-requests.org/
+import sys
 import time
 
 from tgc_utils.utils import list_files_at_path
+
+logging.basicConfig(stream=sys.stdout, level=logging.INFO)
 
 
 TGC_CONFIG = {"url": "https://www.thegamecrafter.com/api"}
