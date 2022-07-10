@@ -13,7 +13,7 @@ from tgc_utils.utils import list_files_at_path
 
 TGC_CARD_SPECS = {
     "euro_card": {
-        "margin": 50,
+        "margin": 55,
         "size": (825, 1125),
     }
 }

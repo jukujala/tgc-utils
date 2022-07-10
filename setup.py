@@ -7,7 +7,7 @@ requirements = ["Pillow>=8.3.1", "requests>=2.25.1"]
 
 setup(
     name="tgc_utils",
-    version="0.0.1",
+    version="0.0.2",
     author="Jussi Kujala",
     author_email="jussi.kujala@iki.fi",
     description="A package to help create games in The Game Crafter.",
