@@ -10,4 +10,3 @@ def list_files_at_path(path):
     """
     abs_path = os.path.abspath(path)
     return [entry.path for entry in os.scandir(abs_path) if entry.is_file()]
-
