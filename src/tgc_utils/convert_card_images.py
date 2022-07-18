@@ -15,6 +15,10 @@ TGC_CARD_SPECS = {
     "euro_card": {
         "margin": 55,
         "size": (825, 1125),
+    },
+    "euro_square_card": {
+        "margin": 55,
+        "size": (900, 900),
     }
 }
 
@@ -32,6 +36,13 @@ def parse_args():
         "--output",
         help="A folder to write the output images. Output files retain names at input.",
         required=True,
+    )
+    parser.add_argument(
+        "-s",
+        "--size",
+        choices=["euro_card", "euro_square_card"],
+        default="euro_card",
+        help="Size of the card.",
     )
     args = parser.parse_args()
     return args
@@ -78,7 +89,7 @@ def convert_card_images(input_path, output_path, config):
 
 def main():
     args = parse_args()
-    config = TGC_CARD_SPECS["euro_card"]
+    config = TGC_CARD_SPECS[args.size]
     convert_card_images(args.input, args.output, config)
     return 0
 
