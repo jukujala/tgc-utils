@@ -19,6 +19,10 @@ TGC_CARD_SPECS = {
     "euro_square_card": {
         "margin": 55,
         "size": (900, 900),
+    },
+    "mini_card": {
+        "margin": 55,
+        "size": (600, 825),
     }
 }
 
@@ -40,7 +44,7 @@ def parse_args():
     parser.add_argument(
         "-s",
         "--size",
-        choices=["euro_card", "euro_square_card"],
+        choices=["euro_card", "euro_square_card", "mini_card"],
         default="euro_card",
         help="Size of the card.",
     )
